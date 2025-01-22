@@ -5,7 +5,8 @@ This repository collects tools and methodologies used in the context of system s
 - Clone\download this repository
 - Start docker
 - Open a command prompt inside the project root directory and execute the following command:
-		 docker compose up --build
+
+  		docker compose up --build
 
 ## Students
 1. Dario Collini
