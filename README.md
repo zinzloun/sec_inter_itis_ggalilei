@@ -1,7 +1,7 @@
 # Internship cyber security course
 This repository collects tools and methodologies used in the context of system security intership
 ## Students
-1. Dario Collina
+1. Dario Collini
 2. Andrea Di Caro
 ## Analyzed vulnerabilities
 - XSS reflected
