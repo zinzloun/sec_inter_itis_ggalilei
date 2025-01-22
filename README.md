@@ -30,7 +30,6 @@ More stealth, use this one
 
 ## TODO Andrea & Dario
 1. describe the analyzed vulnerabilites (you can use external references)
-2. describe the laboratory setup. we need to have Apache2 with PHP enabled. You can install a XAMP server or use a docker container
-3. describe the attacks scenario
-4. describe the mitigation actions
+1. describe the attacks scenario
+1. describe the mitigation actions
 
