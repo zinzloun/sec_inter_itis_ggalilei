@@ -7,6 +7,7 @@ This repository collects tools and methodologies used in the context of system s
 - Open a command prompt inside the project root directory and execute the following command:
 
   		docker compose up --build
+- Visit the vulnerable app at: http://localhost:9000/xss.php
 
 ## Students
 1. Dario Collini
