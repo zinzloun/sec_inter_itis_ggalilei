@@ -1,6 +1,6 @@
 <?php
 // Nome del file da verificare
-$filename = "vulnerable.db";
+ = "vulnerable.db";
 $msg = "";
 
 // Controllo se il db esiste, altrimenti lo creo
@@ -48,7 +48,7 @@ if (!file_exists($filename)) {
 	echo $msg;
 	
     // Connessione al database SQLite
-    $db = new SQLite3('vulnerable.db');
+    $db = new SQLite3();
 
     // Recupero dei parametri 'username' e 'password' dall'input dell'utente
     if (isset($_POST['username']) && isset($_POST['password'])) {
