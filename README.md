@@ -11,14 +11,19 @@ This repository collects tools and methodologies used during the system security
   - Stored
 - SQL injection
 
-## Start the Lab
+## Start the Vulnerable lab
 - Install docker for windows
 - Clone\download this repository
 - Start docker
 - Open a command prompt inside the project root directory and execute the following command:
 
-  		docker compose up --build
-		
+  	  docker compose up --build
+
+## Start the attacker web server
+In ordeer to collect stolen cookies we use a simple http server. Lunch it using:
+
+	python -m http.server
+
 ### For XSS vulnerability
 - Visit the vulnerable page at: http://localhost:9000/xss.php
 
