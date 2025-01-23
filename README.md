@@ -29,7 +29,7 @@ More stealth, use this one
 
 
 ## Vulnerabilities Scenario and actions
-### Steps for SQL Injection (SQLi) Vulnerability Analysis
+### Steps for Vulnerability Analysis
 
 #### 1. Information Gathering:
 - **Application Observation**: Analyze the web application to identify points where user input is used to create SQL queries. These may include login forms, search forms, or any other form that interacts with the database.
