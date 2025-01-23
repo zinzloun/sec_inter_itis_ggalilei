@@ -1,3 +1,29 @@
+<?php
+// Nome del file da verificare
+$filename = "vulnerable.db";
+$msg = "";
+
+// Controllo se il db esiste, altrimenti lo creo
+if (!file_exists($filename)) {
+    $db = new SQLite3($filename);
+
+	// Creazione della tabella utenti (se non esiste già)
+	$db->exec('CREATE TABLE IF NOT EXISTS users (
+		id INTEGER PRIMARY KEY,
+		username TEXT,
+		password TEXT
+	)');
+
+	// Inserimento di alcuni dati di esempio
+	$db->exec("INSERT INTO users (username, password) VALUES ('admin', 'password123')");
+	$db->exec("INSERT INTO users (username, password) VALUES ('user', 'userpassword')");
+
+	$msg = "SQLite db created!<br/>";
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +32,7 @@
     <title>Login SQL Injection Example</title>
 </head>
 <body>
+
     <h1>Login</h1>
     <form method="POST" action="">
         <label for="username">Username:</label>
@@ -18,6 +45,8 @@
     </form>
 
     <?php
+	echo $msg;
+	
     // Connessione al database SQLite
     $db = new SQLite3('vulnerable.db');
 

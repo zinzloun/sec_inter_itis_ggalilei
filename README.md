@@ -12,7 +12,6 @@ This repository collects tools and methodologies used during the system security
 - Visit the vulnerable page at: http://localhost:9000/xss.php
 
 ### SQLi vulnerability
-- Initialize the SQLite db at: http://localhost:9000/initDB.php. You should get a response with "Done"
 - Visit the vulnerable page at: http://localhost:9000/sqlI.php 
 
 ## Students
