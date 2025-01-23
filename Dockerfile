@@ -66,6 +66,13 @@ FROM php:8.2-apache as final
 #    && pecl install xdebug-3.2.1 \
 #    && docker-php-ext-enable redis xdebug
 
+# Install SQLite and enable the pdo_sqlite extension
+# Install SQLite and enable the pdo_sqlite extension
+RUN apt-get update && apt-get install -y \
+    libsqlite3-dev \
+    && docker-php-ext-install pdo_sqlite \
+    && rm -rf /var/lib/apt/lists/*
+
 # Use the default production configuration for PHP runtime arguments, see
 # https://github.com/docker-library/docs/tree/master/php#configuration
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"

