@@ -1,5 +1,16 @@
 # G. Galilei Internship Cyber security course
 This repository collects tools and methodologies used during the system security internship with the students of the G. Galilei Institute.
+
+## Students
+1. Dario Collini
+2. Andrea Di Caro
+
+## Analyzed vulnerabilities
+- XSS
+  - Reflected
+  - Stored
+- SQL injection
+
 ## Start the Lab
 - Install docker for windows
 - Clone\download this repository
@@ -13,14 +24,6 @@ This repository collects tools and methodologies used during the system security
 
 ### SQLi vulnerability
 - Visit the vulnerable page at: http://localhost:9000/sqlI.php 
-
-## Students
-1. Dario Collini
-2. Andrea Di Caro
-## Analyzed vulnerabilities
-- XSS reflected
-- XSS stored
-- SQL injection
 
 ## Payloads
 ### Reflected
