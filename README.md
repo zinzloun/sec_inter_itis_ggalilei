@@ -1,5 +1,5 @@
-# Internship cyber security course
-This repository collects tools and methodologies used in the context of system security intership
+# G. Galilei Internship Cyber security course
+This repository collects tools and methodologies used during the system security internship with the students of the G. Galilei Institute.
 ## Start the Lab
 - Install docker for windows
 - Clone\download this repository
