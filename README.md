@@ -40,6 +40,7 @@ To gain access to the first account saved in the database
 
     a' OR 1=1 --
 To gain access to an account by knowing the username
+
     [username]' OR 1=1 --
 
 		
