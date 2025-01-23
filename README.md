@@ -24,11 +24,11 @@ In ordeer to collect stolen cookies we use a simple http server. Lunch it using:
 
 	python -m http.server
 
-### For XSS vulnerability
-- Visit the vulnerable page at: http://localhost:9000/xss.php
+### For XSS vulnerabilities
+- Visit: http://localhost:9000/xss.php
 
 ### SQLi vulnerability
-- Visit the vulnerable page at: http://localhost:9000/sqlI.php 
+- Visit: http://localhost:9000/sqlI.php 
 
 ## Payloads
 ### Reflected
@@ -49,7 +49,6 @@ To gain access to the first account saved in the database
 To gain access to an account by knowing the username
 
     [username]' OR 1=1 --
-
 		
 
 ## Vulnerabilities Scenario and actions
