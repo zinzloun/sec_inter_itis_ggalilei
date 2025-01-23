@@ -37,7 +37,7 @@ More stealth, use this one
     
 ###**SQLI**
 
-```-a' OR 1=1 --
+```-a' OR 1=1 --```
 
 		
 
