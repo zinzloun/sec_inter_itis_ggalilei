@@ -21,6 +21,7 @@ This repository collects tools and methodologies used in the context of system s
 ## Analyzed vulnerabilities
 - XSS reflected
 - XSS stored
+- SQL injection
 
 ## Payloads
 ### Reflected
